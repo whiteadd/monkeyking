@@ -1,179 +1,71 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>러시아-한국 국제결혼</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff0f5; color: #333; }
-        header { background: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        header h1 { font-size: 24px; color: #ff4081; }
-        nav button { margin-left: 10px; padding: 5px 10px; cursor: pointer; }
-        main { padding: 40px; max-width: 1000px; margin: auto; }
-        section { margin-bottom: 60px; }
-        h2 { font-size: 28px; margin-bottom: 10px; }
-        p { font-size: 16px; line-height: 1.5; }
-        .card { background: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .contact-btn { display: inline-block; padding: 10px 20px; background: #ff4081; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
-        footer { text-align: center; padding: 20px; background: #f5f5f5; font-size: 14px; color: #666; }
-        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
-        .gallery img { width: calc(33% - 10px); border-radius: 12px; }
-        .testimonial { background: #fff; padding: 20px; border-radius: 16px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto; }
-        input, textarea { padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; }
-        button.submit-btn { background: #ff4081; color: #fff; border: none; padding: 10px; border-radius: 8px; cursor: pointer; font-size: 16px; }
-        .faq { max-width: 800px; margin: auto; }
-        .faq-item { margin-bottom: 20px; }
-        .faq-item h3 { font-size: 20px; margin-bottom: 5px; cursor: pointer; }
-        .faq-item p { display: none; margin-left: 10px; }
-        .map { width: 100%; height: 300px; border: 0; border-radius: 16px; }
-        .social-buttons { display: flex; gap: 10px; justify-content: center; }
-        .social-buttons a { display: inline-block; padding: 10px 15px; border-radius: 8px; background: #ff4081; color: #fff; text-decoration: none; font-size: 14px; }
-        @media (max-width: 768px) { .gallery img { width: calc(50% - 10px); } }
-        @media (max-width: 480px) { .gallery img { width: 100%; } }
-    </style>
-    <script>
-        function setLanguage(lang) {
-            const content = {
-                ko: {
-                    title: '러시아-한국 국제결혼',
-                    subtitle: '서로 다른 문화를 이해하고 함께 미래를 만들어가세요',
-                    about: '저희는 러시아와 한국을 연결하는 국제결혼 전문 서비스입니다. 믿을 수 있는 매칭과 맞춤형 상담을 제공합니다.',
-                    service1: '맞춤형 매칭으로 이상형을 만나보세요.',
-                    service2: '문화와 언어 장벽을 함께 극복하세요.',
-                    contact: '문의하기',
-                    testimonial1: '정말 만족스러운 서비스였습니다! - 김지훈',
-                    testimonial2: '덕분에 좋은 파트너를 만났습니다. - 안나',
-                    testimonial3: '상담이 친절하고 정확했습니다. - 박민수',
-                    faq1: '서비스를 이용하려면 어떻게 해야 하나요?',
-                    faq1a: '홈페이지 문의 폼이나 전화 상담을 통해 예약하실 수 있습니다.',
-                    faq2: '결혼 상담 비용은 얼마인가요?',
-                    faq2a: '상담 비용은 무료이며, 매칭 서비스는 맞춤 상담 후 안내드립니다.',
-                    faq3: '언어가 달라도 상담 가능한가요?',
-                    faq3a: '한국어와 러시아어 모두 지원합니다.'
-                },
-                ru: {
-                    title: 'Российско-Корейский Брак',
-                    subtitle: 'Понимайте разные культуры и стройте будущее вместе',
-                    about: 'Мы специализируемся на международных браках между Россией и Кореей. Предлагаем надежные знакомства и персональные консультации.',
-                    service1: 'Найдите идеального партнера с помощью персонального подбора.',
-                    service2: 'Мы поможем преодолеть культурные и языковые барьеры.',
-                    contact: 'Связаться',
-                    testimonial1: 'Отличный сервис! - 김지훈',
-                    testimonial2: 'Нашел отличного партнера благодаря вам. - 안на',
-                    testimonial3: 'Консультации были дружелюбными и точными. - 박민수',
-                    faq1: 'Как воспользоваться услугой?',
-                    faq1a: 'Вы можете записаться через форму на сайте или по телефону.',
-                    faq2: 'Сколько стоит консультация?',
-                    faq2a: 'Консультация бесплатна, информация о стоимости подбора предоставляется после консультации.',
-                    faq3: 'Поддерживается ли разный язык?',
-                    faq3a: 'Поддерживаются корейский и русский языки.'
-                }
-            };
-
-            document.getElementById('title').textContent = content[lang].title;
-            document.getElementById('subtitle').textContent = content[lang].subtitle;
-            document.getElementById('about').textContent = content[lang].about;
-            document.getElementById('service1').textContent = content[lang].service1;
-            document.getElementById('service2').textContent = content[lang].service2;
-            document.getElementById('contact').textContent = content[lang].contact;
-            document.getElementById('testimonial1').textContent = content[lang].testimonial1;
-            document.getElementById('testimonial2').textContent = content[lang].testimonial2;
-            document.getElementById('testimonial3').textContent = content[lang].testimonial3;
-            document.getElementById('faq1').textContent = content[lang].faq1;
-            document.getElementById('faq1a').textContent = content[lang].faq1a;
-            document.getElementById('faq2').textContent = content[lang].faq2;
-            document.getElementById('faq2a').textContent = content[lang].faq2a;
-            document.getElementById('faq3').textContent = content[lang].faq3;
-            document.getElementById('faq3a').textContent = content[lang].faq3a;
-        }
-
-        function toggleFAQ(id) {
-            const p = document.getElementById(id);
-            p.style.display = p.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>국제결혼 상담 홈페이지</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">러시아-한국 국제결혼</h1>
-        <nav>
-            <button onclick="setLanguage('ko')">한국어</button>
-            <button onclick="setLanguage('ru')">Русский</button>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2 id="subtitle">서로 다른 문화를 이해하고 함께 미래를 만들어가세요</h2>
-            <p id="about">저희는 러시아와 한국을 연결하는 국제결혼 전문 서비스입니다. 믿을 수 있는 매칭과 맞춤형 상담을 제공합니다.</p>
-        </section>
+<header>
+  <h1 id="title">국제결혼 상담 홈페이지</h1>
+  <nav>
+    <button onclick="setLanguage('ko')">한국어</button>
+    <button onclick="setLanguage('ru')">Русский</button>
+  </nav>
+</header>
 
-        <section class="card" id="service1">맞춤형 매칭으로 이상형을 만나보세요.</section>
-        <section class="card" id="service2">문화와 언어 장벽을 함께 극복하세요.</section>
+<section id="intro">
+  <h2>저희 서비스를 소개합니다</h2>
+  <p>국제결혼 전문 상담과 맞춤 매칭 서비스를 제공합니다.</p>
+</section>
 
-        <section>
-            <h2>사진 갤러리</h2>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/300x200?text=사진1" alt="사진1">
-                <img src="https://via.placeholder.com/300x200?text=사진2" alt="사진2">
-                <img src="https://via.placeholder.com/300x200?text=사진3" alt="사진3">
-            </div>
-        </section>
+<section id="consultation">
+  <h2>상담 신청</h2>
+  <form id="consultForm" method="post" action="submit_form.php">
+    <input type="text" name="name" id="name" placeholder="이름" required><br>
+    <input type="text" name="contact" id="contact" placeholder="연락처" required><br>
+    <textarea name="message" id="message" placeholder="문의 내용" rows="4" required></textarea><br>
+    <button type="submit" class="btn">상담 신청</button>
+  </form>
+  <p id="formMsg"></p>
+</section>
 
-        <section>
-            <h2>이용 후기</h2>
-            <div class="testimonial" id="testimonial1">정말 만족스러운 서비스였습니다! - 김지훈</div>
-            <div class="testimonial" id="testimonial2">덕분에 좋은 파트너를 만났습니다. - 안나</div>
-            <div class="testimonial" id="testimonial3">상담이 친절하고 정확했습니다. - 박민수</div>
-        </section>
+<section id="success">
+  <h2>성공 사례</h2>
+  <div class="slider">
+    <div class="slide active"><p>김*씨 & 안*씨: 행복한 결혼을 이루었습니다.</p></div>
+    <div class="slide"><p>박*씨 & 리*씨: 저희 서비스를 통해 만남을 가졌습니다.</p></div>
+    <div class="slide"><p>이*씨 & 올*씨: 맞춤 상담으로 성공적인 결혼!</p></div>
+  </div>
+</section>
 
-        <section>
-            <h2>FAQ</h2>
-            <div class="faq">
-                <div class="faq-item">
-                    <h3 onclick="toggleFAQ('faq1a')" id="faq1">서비스를 이용하려면 어떻게 해야 하나요?</h3>
-                    <p id="faq1a">홈페이지 문의 폼이나 전화 상담을 통해 예약하실 수 있습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 onclick="toggleFAQ('faq2a')" id="faq2">결혼 상담 비용은 얼마인가요?</h3>
-                    <p id="faq2a">상담 비용은 무료이며, 매칭 서비스는 맞춤 상담 후 안내드립니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 onclick="toggleFAQ('faq3a')" id="faq3">언어가 달라도 상담 가능한가요?</h3>
-                    <p id="faq3a">한국어와 러시아어 모두 지원합니다.</p>
-                </div>
-            </div>
-        </section>
+<section id="gallery">
+  <h2>사진 갤러리</h2>
+  <div class="gallery">
+    <img src="images/couple1.jpg" alt="커플1">
+    <img src="images/couple2.jpg" alt="커플2">
+    <img src="images/couple3.jpg" alt="커플3">
+  </div>
+</section>
 
-        <section>
-            <h2>사무실 위치</h2>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.918349142068!2d127.02860031525713!3d37.49794257981259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f87e2a1bdb%3A0x3b3ecf4c6d2953c6!2z7JWI64WV7ZWY7ISc7Jq47YyM!5e0!3m2!1sko!2skr!4v1694155512345!5m2!1sko!2skr" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+<section id="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <button>Q1. 국제결혼 절차는 어떻게 되나요?</button>
+    <p>A1. 단계별 상담과 서류 안내를 제공합니다.</p>
+  </div>
+  <div class="faq-item">
+    <button>Q2. 상담 비용이 있나요?</button>
+    <p>A2. 상담은 무료이며 매칭 시 일정 비용이 발생합니다.</p>
+  </div>
+</section>
 
-        <section>
-            <h2>문의하기</h2>
-            <form>
-                <input type="text" placeholder="이름" required>
-                <input type="email" placeholder="이메일" required>
-                <textarea placeholder="메시지" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">문의하기</button>
-            </form>
-        </section>
+<footer>
+  <p>전화: 010-1234-5678 | 이메일: info@weddingexample.com</p>
+</footer>
 
-        <section>
-            <h2>SNS 연결</h2>
-            <div class="social-buttons">
-                <a href="#">인스타그램</a>
-                <a href="#">페이스북</a>
-                <a href="#">카카오톡</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        © 2025 러시아-한국 국제결혼. All rights reserved.
-    </footer>
+<script src="script.js"></script>
 </body>
 </html>
