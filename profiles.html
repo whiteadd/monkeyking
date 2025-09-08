@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title data-i18n="nav_profiles">프로필</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/lang.js" defer></script>
 </head>
 <body>
@@ -15,6 +15,7 @@
       <a href="about.html" data-i18n="nav_about">회사소개</a>
       <a href="services.html" data-i18n="nav_services">서비스</a>
       <a href="profiles.html" data-i18n="nav_profiles">프로필</a>
+      <a href="events.html" data-i18n="nav_events">이벤트</a>
       <a href="contact.html" data-i18n="nav_contact">문의</a>
     </nav>
     <select id="langSelect">
@@ -26,17 +27,30 @@
   </header>
 
   <main>
-    <section>
-      <h2 data-i18n="profiles_intro">매칭 후보 예시</h2>
-      <div class="profile-card">
-        <img src="https://via.placeholder.com/150" alt="Profile 1">
-        <p data-i18n="profile1">30세, 러시아, 교사</p>
+    <h2 data-i18n="profiles_intro">매칭 후보 예시</h2>
+
+    <div class="profile-list">
+      <div class="profile-card" aria-label="profile-1">
+        <img src="https://via.placeholder.com/150" alt="Profile 1" />
+        <h3 data-i18n="profile1_name">예시: 안나 (Anna)</h3>
+        <p data-i18n="profile1">30세, 러시아, 교사 — 성실하고 가족지향적입니다.</p>
       </div>
-      <div class="profile-card">
-        <img src="https://via.placeholder.com/150" alt="Profile 2">
-        <p data-i18n="profile2">32세, 한국, 엔지니어</p>
+
+      <div class="profile-card" aria-label="profile-2">
+        <img src="https://via.placeholder.com/150" alt="Profile 2" />
+        <h3 data-i18n="profile2_name">예시: 민수 (Minsu)</h3>
+        <p data-i18n="profile2">32세, 한국, 엔지니어 — 안정적인 직장과 책임감 있는 성격.</p>
       </div>
-    </section>
+
+      <div class="profile-card" aria-label="profile-3">
+        <img src="https://via.placeholder.com/150" alt="Profile 3" />
+        <h3 data-i18n="profile3_name">예시: 엘레나 (Elena)</h3>
+        <p data-i18n="profile3">28세, 러시아, 간호사 — 따뜻하고 배려심이 많습니다.</p>
+      </div>
+    </div>
+
+    <p class="note" data-i18n="profiles_note">※ 실제 개인 정보는 보호됩니다. 상세 프로필은 상담 후 제공됩니다.</p>
+    <a href="contact.html" class="btn" data-i18n="btn_get_started">상담 신청</a>
   </main>
 
   <footer>
