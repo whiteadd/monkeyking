@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title data-i18n="nav_contact">문의</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/lang.js" defer></script>
 </head>
 <body>
@@ -15,6 +15,7 @@
       <a href="about.html" data-i18n="nav_about">회사소개</a>
       <a href="services.html" data-i18n="nav_services">서비스</a>
       <a href="profiles.html" data-i18n="nav_profiles">프로필</a>
+      <a href="events.html" data-i18n="nav_events">이벤트</a>
       <a href="contact.html" data-i18n="nav_contact">문의</a>
     </nav>
     <select id="langSelect">
@@ -28,12 +29,30 @@
   <main>
     <section>
       <h2 data-i18n="contact_title">상담 신청</h2>
-      <form action="mailto:your@email.com" method="post">
-        <input type="text" name="name" placeholder="이름" required>
-        <input type="email" name="email" placeholder="이메일" required>
+
+      <!-- 간단 mailto 폼 (GitHub Pages에는 서버가 없으니 mailto 또는 외부 폼 서비스 권장) -->
+      <form action="mailto:your@email.com"
+            method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="이름" required />
+        <input type="email" name="email" placeholder="이메일" required />
+        <input type="text" name="phone" placeholder="연락처(선택)" />
+        <select name="preferred_language">
+          <option value="ko">한국어</option>
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
         <textarea name="message" placeholder="문의 내용" required></textarea>
         <button type="submit" data-i18n="btn_send">보내기</button>
       </form>
+
+      <p data-i18n="contact_note">※ 더 안정적인 접수(파일 첨부/DB 저장)를 원하시면 Google Forms, Formspree, Netlify Forms 등 외부 서비스 연동을 권장합니다.</p>
+
+      <section class="contact-info">
+        <h3 data-i18n="contact_info_title">운영 연락처</h3>
+        <p data-i18n="contact_phone">전화: 010-1234-5678</p>
+        <p data-i18n="contact_email">이메일: info@mymate.co.kr</p>
+      </section>
     </section>
   </main>
 
