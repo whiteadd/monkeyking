@@ -1,7 +1,8 @@
 const translations = {
   ko: {
     title:"국제결혼 매칭 서비스",
-    nav_home:"홈", nav_about:"회사소개", nav_services:"서비스", nav_profiles:"프로필", nav_contact:"문의",
+    slogan:"여성가족부 출신 전문가가 운영하는 신뢰할 수 있는 매칭 서비스",
+    nav_home:"홈", nav_about:"회사소개", nav_services:"서비스", nav_profiles:"프로필", nav_events:"이벤트", nav_contact:"문의",
     hero_title:"당신의 인연, 지금 찾아보세요",
     hero_text:"한국과 러시아를 연결하는 안전하고 신뢰할 수 있는 국제결혼 매칭 서비스",
     btn_get_started:"상담 신청",
@@ -10,8 +11,9 @@ const translations = {
     benefit2:"맞춤형 매칭 서비스",
     benefit3:"전문 상담 지원",
     benefit4:"안전한 결혼 절차 안내",
+    cta_text:"지금 상담을 신청하고 첫 만남을 시작하세요!",
     about_title:"우리는 누구인가?",
-    about_text:"저희는 한국과 러시아 간 국제결혼 매칭 서비스를 전문으로 하는 기업입니다. 신뢰할 수 있는 정보와 안전한 절차를 기반으로, 진정한 인연을 만날 수 있도록 돕습니다.",
+    about_text:"저희는 한국과 러시아 간 국제결혼 매칭 서비스를 전문으로 하는 기업입니다. 여성가족부 전직 서기관 출신이 운영하며, 신뢰할 수 있는 정보와 안전한 절차를 기반으로 진정한 인연을 만날 수 있도록 돕습니다.",
     services_process:"매칭 절차",
     step1:"상담 신청 및 기본 프로필 작성",
     step2:"맞춤형 매칭 후보 제안",
@@ -21,15 +23,41 @@ const translations = {
     support1:"전문 통역 지원",
     support2:"비자 및 서류 준비",
     support3:"문화 적응 프로그램",
+    pricing_title:"요금 안내",
+    pricing_text:"기본 상담은 무료이며, 맞춤형 매칭 및 행정지원은 서비스 패키지에 따라 요금이 달라집니다. 자세한 견적은 상담을 통해 안내드립니다.",
+    faq_title:"자주 묻는 질문 (FAQ)",
+    faq_q1:"신원 확인은 어떻게 하나요?",
+    faq_a1:"정부 발행 신분증, 신원 증빙서류 및 전화/영상 인터뷰를 통해 확인합니다.",
+    faq_q2:"결혼 후 정착지원은 제공되나요?",
+    faq_a2:"네, 비자/서류 안내 및 문화적응 프로그램을 통해 정착을 지원합니다.",
     profiles_intro:"매칭 후보 예시",
-    profile1:"30세, 러시아, 교사",
-    profile2:"32세, 한국, 엔지니어",
+    profile1_name:"안나 (Anna)",
+    profile1:"30세, 러시아, 교사 — 성실하고 가족지향적입니다.",
+    profile2_name:"민수 (Minsu)",
+    profile2:"32세, 한국, 엔지니어 — 안정적인 직장과 책임감 있는 성격.",
+    profile3_name:"엘레나 (Elena)",
+    profile3:"28세, 러시아, 간호사 — 따뜻하고 배려심이 많습니다.",
+    profiles_note:"※ 실제 개인 정보는 보호됩니다. 상세 프로필은 상담 후 제공됩니다.",
+    events_title:"진행 중인 이벤트",
+    event1_title:"무료 첫 상담 이벤트",
+    event1_text:"지금 상담을 신청하면 1:1 무료 첫 상담을 제공합니다. (선착순)",
+    event2_title:"문화 교류 모임",
+    event2_text:"한국-러시아 문화 교류 모임을 정기적으로 진행하고 있습니다. 참여자 모집 중.",
+    testimonial_title:"고객 후기",
+    testimonial1:"“정말 신뢰가 갔습니다. 절차 안내부터 정착 지원까지 세심히 도와주셨어요.” — 김○○",
+    testimonial2:"“전문가의 조언 덕분에 안정적으로 결혼 절차를 마칠 수 있었습니다.” — A. Petrov",
     contact_title:"상담 신청",
-    btn_send:"보내기"
+    btn_send:"보내기",
+    contact_note:"※ 더 안정적인 접수(파일 첨부/DB 저장)를 원하시면 Google Forms, Formspree, Netlify Forms 등 외부 서비스 연동을 권장합니다.",
+    contact_info_title:"운영 연락처",
+    contact_phone:"전화: 010-1234-5678",
+    contact_email:"이메일: info@mymate.co.kr"
   },
+
   ru: {
     title:"Сервис международных браков",
-    nav_home:"Главная", nav_about:"О компании", nav_services:"Сервисы", nav_profiles:"Профили", nav_contact:"Контакты",
+    slogan:"Эксперт бывшего сотрудника Министерства по делам семьи управляет надежным сервисом",
+    nav_home:"Главная", nav_about:"О компании", nav_services:"Сервисы", nav_profiles:"Профили", nav_events:"События", nav_contact:"Контакты",
     hero_title:"Найдите свою половинку прямо сейчас",
     hero_text:"Надежный сервис международных браков между Кореей и Россией",
     btn_get_started:"Запрос консультации",
@@ -38,8 +66,9 @@ const translations = {
     benefit2:"Индивидуальный подбор пары",
     benefit3:"Поддержка профессиональных консультантов",
     benefit4:"Безопасная процедура брака",
+    cta_text:"Подайте заявку на консультацию и начните первые встречи!",
     about_title:"Кто мы?",
-    about_text:"Мы специализируемся на международных браках между Кореей и Россией. Наш сервис основан на надежной информации и безопасных процедурах.",
+    about_text:"Мы специализируемся на международных браках между Кореей и Россией. Наш сервис управляется бывшим сотрудником Министерства по делам семьи и основан на надежной информации и безопасных процедурах.",
     services_process:"Процесс подбора",
     step1:"Заявка и заполнение профиля",
     step2:"Индивидуальные предложения кандидатов",
@@ -49,15 +78,41 @@ const translations = {
     support1:"Профессиональный перевод",
     support2:"Подготовка виз и документов",
     support3:"Программы культурной адаптации",
+    pricing_title:"Информация о стоимости",
+    pricing_text:"Базовая консультация бесплатна. Стоимость индивидуальных пакетов варьируется — подробности по запросу.",
+    faq_title:"Часто задаваемые вопросы",
+    faq_q1:"Как проходит проверка личности?",
+    faq_a1:"Проверка по документам, интервью по телефону/видео и дополнительные подтверждающие документы.",
+    faq_q2:"Предоставляется ли поддержка после заключения брака?",
+    faq_a2:"Да, поддержка по визам, документам и адаптации предоставляется.",
     profiles_intro:"Примеры кандидатов",
-    profile1:"30 лет, Россия, учитель",
-    profile2:"32 года, Корея, инженер",
+    profile1_name:"Анна (Anna)",
+    profile1:"30 лет, Россия, учитель — ответственный и семейно ориентированный человек.",
+    profile2_name:"Минсу (Minsu)",
+    profile2:"32 года, Корея, инженер — надежный и ответственный.",
+    profile3_name:"Елена (Elena)",
+    profile3:"28 лет, Россия, медсестра — заботливый и добрый человек.",
+    profiles_note:"※ Личные данные защищены. Подробные профили предоставляются после консультации.",
+    events_title:"Текущие события",
+    event1_title:"Бесплатная первая консультация",
+    event1_text:"При подаче заявки вы получаете бесплатную 1:1 консультацию (первым заявителям).",
+    event2_title:"Встречи культурного обмена",
+    event2_text:"Регулярные встречи по культурному обмену между Кореей и Россией. Идет набор участников.",
+    testimonial_title:"Отзывы клиентов",
+    testimonial1:"«Мне понравилось — подробная поддержка на всех этапах.» — Ким",
+    testimonial2:"«Благодаря профессиональным советам все прошло гладко.» — A. Petrov",
     contact_title:"Запрос консультации",
-    btn_send:"Отправить"
+    btn_send:"Отправить",
+    contact_note:"Для надёжной отправки (вкл. вложения/хранение) рекомендуем использовать Google Forms, Formspree или Netlify Forms.",
+    contact_info_title:"Контакт",
+    contact_phone:"Телефон: 010-1234-5678",
+    contact_email:"Почта: info@mymate.co.kr"
   },
+
   en: {
     title:"International Marriage Matching Service",
-    nav_home:"Home", nav_about:"About", nav_services:"Services", nav_profiles:"Profiles", nav_contact:"Contact",
+    slogan:"Operated by an expert formerly at the Ministry of Gender and Family — trusted matchmaking",
+    nav_home:"Home", nav_about:"About", nav_services:"Services", nav_profiles:"Profiles", nav_events:"Events", nav_contact:"Contact",
     hero_title:"Find your match today",
     hero_text:"Reliable international marriage matching service connecting Korea and Russia",
     btn_get_started:"Request Consultation",
@@ -66,8 +121,9 @@ const translations = {
     benefit2:"Customized matchmaking",
     benefit3:"Professional consultation support",
     benefit4:"Safe marriage procedures",
+    cta_text:"Request a consultation now and start meeting candidates!",
     about_title:"Who we are?",
-    about_text:"We specialize in international marriage matchmaking between Korea and Russia. Based on reliable information and safe processes, we help you find your true partner.",
+    about_text:"We specialize in matchmaking between Korea and Russia. Operated by a former Ministry of Gender and Family official, we provide reliable information and secure processes to help you find a true partner.",
     services_process:"Matching Process",
     step1:"Consultation request & profile setup",
     step2:"Personalized candidate suggestions",
@@ -77,15 +133,41 @@ const translations = {
     support1:"Professional interpretation",
     support2:"Visa & document preparation",
     support3:"Cultural adaptation programs",
+    pricing_title:"Pricing",
+    pricing_text:"Basic consultation is free. Fees for personalized matchmaking and administrative support vary by package — contact us for details.",
+    faq_title:"FAQ",
+    faq_q1:"How do you verify identity?",
+    faq_a1:"We verify IDs, supporting documents, and conduct phone/video interviews.",
+    faq_q2:"Do you support post-marriage settlement?",
+    faq_a2:"Yes — we assist with visas, documents and cultural adaptation support.",
     profiles_intro:"Sample Candidates",
-    profile1:"30 years old, Russia, Teacher",
-    profile2:"32 years old, Korea, Engineer",
+    profile1_name:"Anna",
+    profile1:"30 years old, Russia, Teacher — responsible and family-oriented.",
+    profile2_name:"Minsu",
+    profile2:"32 years old, Korea, Engineer — stable job and responsible personality.",
+    profile3_name:"Elena",
+    profile3:"28 years old, Russia, Nurse — warm and caring.",
+    profiles_note:"※ Personal data is protected. Full profiles are shared after consultation.",
+    events_title:"Ongoing Events",
+    event1_title:"Free First Consultation",
+    event1_text:"Apply now to receive a free 1:1 initial consultation (limited availability).",
+    event2_title:"Cultural Exchange Meetup",
+    event2_text:"Regular Korea-Russia cultural exchange meetups — participants are being recruited.",
+    testimonial_title:"Client Testimonials",
+    testimonial1:"“They provided trustworthy support at every step.” — Kim",
+    testimonial2:"“Thanks to professional advice we completed procedures smoothly.” — A. Petrov",
     contact_title:"Request Consultation",
-    btn_send:"Send"
+    btn_send:"Send",
+    contact_note:"For more reliable submission (attachments/DB storage), consider Google Forms, Formspree or Netlify Forms.",
+    contact_info_title:"Contact Info",
+    contact_phone:"Phone: 010-1234-5678",
+    contact_email:"Email: info@mymate.co.kr"
   },
+
   zh: {
     title:"国际婚姻匹配服务",
-    nav_home:"首页", nav_about:"公司介绍", nav_services:"服务", nav_profiles:"个人资料", nav_contact:"联系",
+    slogan:"由前女性家庭部专家运营，值得信赖的匹配服务",
+    nav_home:"首页", nav_about:"公司介绍", nav_services:"服务", nav_profiles:"个人资料", nav_events:"活动", nav_contact:"联系",
     hero_title:"立即寻找你的缘分",
     hero_text:"连接韩国和俄罗斯的安全可靠国际婚姻匹配服务",
     btn_get_started:"申请咨询",
@@ -94,8 +176,9 @@ const translations = {
     benefit2:"量身定制匹配",
     benefit3:"专业咨询支持",
     benefit4:"安全的结婚流程",
+    cta_text:"立即申请咨询，开始您的首次见面！",
     about_title:"我们是谁?",
-    about_text:"我们专注于韩俄国际婚姻匹配服务。基于可靠信息和安全流程，帮助您找到真正的伴侣。",
+    about_text:"我们专注于韩俄国际婚姻匹配服务。由前女性家庭部官员运营，基于可靠信息和安全流程，帮助您找到真正的伴侣。",
     services_process:"匹配流程",
     step1:"申请咨询并填写基本资料",
     step2:"推荐定制候选人",
@@ -105,27 +188,67 @@ const translations = {
     support1:"专业口译",
     support2:"签证与文件准备",
     support3:"文化适应课程",
+    pricing_title:"费用说明",
+    pricing_text:"基础咨询免费。个性化匹配与行政支持根据套餐收费，详情请咨询。",
+    faq_title:"常见问题",
+    faq_q1:"如何进行身份验证？",
+    faq_a1:"通过政府签发身份证明、证明文件以及电话/视频面试进行验证。",
+    faq_q2:"结婚后是否提供安置支持？",
+    faq_a2:"是的，我们提供签证、文件及文化适应支持。",
     profiles_intro:"候选人示例",
-    profile1:"30岁, 俄罗斯, 教师",
-    profile2:"32岁, 韩国, 工程师",
+    profile1_name:"安娜 (Anna)",
+    profile1:"30岁, 俄罗斯, 教师 — 认真且重视家庭。",
+    profile2_name:"民秀 (Minsu)",
+    profile2:"32岁, 韩国, 工程师 — 工作稳定、责任心强。",
+    profile3_name:"艾琳娜 (Elena)",
+    profile3:"28岁, 俄罗斯, 护士 — 热心且有爱心。",
+    profiles_note:"※ 个人信息受保护，完整资料将在咨询后提供。",
+    events_title:"正在进行的活动",
+    event1_title:"首次免费咨询",
+    event1_text:"现在申请可获得 1:1 免费首次咨询（先到先得）。",
+    event2_title:"文化交流活动",
+    event2_text:"定期举办韩俄文化交流活动，现正招募参与者。",
+    testimonial_title:"客户评价",
+    testimonial1:"“在每个环节都给予信赖感，帮助很周到。” — 金先生",
+    testimonial2:"“专业建议让我们顺利完成手续。” — A. Petrov",
     contact_title:"申请咨询",
-    btn_send:"发送"
+    btn_send:"发送",
+    contact_note:"如需更稳定的接收（含附件/数据库保存），建议使用 Google Forms、Formspree 或 Netlify Forms 等服务。",
+    contact_info_title:"联系方式",
+    contact_phone:"电话: 010-1234-5678",
+    contact_email:"邮箱: info@mymate.co.kr"
   }
 };
 
 function setLanguage(lang){
   document.querySelectorAll('[data-i18n]').forEach(el=>{
-    const key=el.getAttribute('data-i18n');
-    if(translations[lang] && translations[lang][key]){
+    const key = el.getAttribute('data-i18n');
+    if (!key) return;
+    if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
   });
+  // 업데이트: 문서 타이틀도 교체
+  if (translations[lang] && translations[lang].title) {
+    document.title = translations[lang].title;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
-  const langSelect=document.getElementById('langSelect');
-  if(langSelect){
-    langSelect.addEventListener('change', e=> setLanguage(e.target.value));
-    setLanguage('ko'); // 기본 한국어
+  const langSelect = document.getElementById('langSelect');
+  if (langSelect){
+    // 기본값: 사용자가 이전에 선택한 언어를 기억하도록 (localStorage)
+    const saved = localStorage.getItem('site_lang');
+    const defaultLang = saved || 'ko';
+    langSelect.value = defaultLang;
+    setLanguage(defaultLang);
+
+    langSelect.addEventListener('change', (e)=>{
+      const v = e.target.value;
+      localStorage.setItem('site_lang', v);
+      setLanguage(v);
+    });
+  } else {
+    setLanguage('ko');
   }
 });
