@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="nav_contact">문의</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lang.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 data-i18n="nav_contact">문의</h1>
+    <nav>
+      <a href="index.html" data-i18n="nav_home">홈</a>
+      <a href="about.html" data-i18n="nav_about">회사소개</a>
+      <a href="services.html" data-i18n="nav_services">서비스</a>
+      <a href="profiles.html" data-i18n="nav_profiles">프로필</a>
+      <a href="contact.html" data-i18n="nav_contact">문의</a>
+    </nav>
+    <select id="langSelect">
+      <option value="ko">한국어</option>
+      <option value="ru">Русский</option>
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+    </select>
+  </header>
+
+  <main>
+    <section>
+      <h2 data-i18n="contact_title">상담 신청</h2>
+      <form action="mailto:your@email.com" method="post">
+        <input type="text" name="name" placeholder="이름" required>
+        <input type="email" name="email" placeholder="이메일" required>
+        <textarea name="message" placeholder="문의 내용" required></textarea>
+        <button type="submit" data-i18n="btn_send">보내기</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 국제결혼 매칭 서비스</p>
+  </footer>
+</body>
+</html>
