@@ -3,55 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="title">국제결혼 매칭 서비스</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/lang.js" defer></script>
+  <title>국제결혼 매칭 서비스</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
   <header>
     <h1 data-i18n="title">국제결혼 매칭 서비스</h1>
-    <p data-i18n="slogan">여성가족부 출신 전문가가 운영하는 신뢰할 수 있는 매칭 서비스</p>
     <nav>
-      <a href="index.html" data-i18n="nav_home">홈</a>
-      <a href="about.html" data-i18n="nav_about">회사소개</a>
-      <a href="services.html" data-i18n="nav_services">서비스</a>
-      <a href="profiles.html" data-i18n="nav_profiles">프로필</a>
-      <a href="events.html" data-i18n="nav_events">이벤트</a>
-      <a href="contact.html" data-i18n="nav_contact">문의</a>
+      <ul>
+        <li><a href="#about" data-i18n="menu.about">소개</a></li>
+        <li><a href="#services" data-i18n="menu.services">서비스</a></li>
+        <li><a href="#contact" data-i18n="menu.contact">문의</a></li>
+      </ul>
     </nav>
-    <select id="langSelect">
+    <select id="lang-switcher">
       <option value="ko">한국어</option>
-      <option value="ru">Русский</option>
       <option value="en">English</option>
-      <option value="zh">中文</option>
+      <option value="ru">Русский</option>
     </select>
   </header>
 
   <main>
-    <section class="hero">
-      <h2 data-i18n="hero_title">당신의 인연, 지금 찾아보세요</h2>
-      <p data-i18n="hero_text">한국과 러시아를 연결하는 안전하고 신뢰할 수 있는 국제결혼 매칭 서비스</p>
-      <a href="contact.html" class="btn" data-i18n="btn_get_started">상담 신청</a>
+    <section id="about">
+      <h2 data-i18n="about.title">저희는 누구인가요?</h2>
+      <p data-i18n="about.text">한국과 러시아를 중심으로 진지한 국제결혼을 원하는 분들을 연결합니다.</p>
     </section>
 
-    <section class="benefits">
-      <h2 data-i18n="section_benefits">우리 서비스의 특징</h2>
+    <section id="services">
+      <h2 data-i18n="services.title">제공 서비스</h2>
       <ul>
-        <li data-i18n="benefit1">신뢰할 수 있는 프로필 검증</li>
-        <li data-i18n="benefit2">맞춤형 매칭 서비스</li>
-        <li data-i18n="benefit3">전문 상담 지원</li>
-        <li data-i18n="benefit4">안전한 결혼 절차 안내</li>
+        <li data-i18n="services.matching">맞춤형 매칭</li>
+        <li data-i18n="services.translation">통역 및 번역 지원</li>
+        <li data-i18n="services.support">법률 및 행정 절차 지원</li>
       </ul>
     </section>
 
-    <section class="cta">
-      <h3 data-i18n="cta_text">지금 상담을 신청하고 첫 만남을 시작하세요!</h3>
-      <a href="contact.html" class="btn" data-i18n="btn_contact">문의하기</a>
+    <section id="contact">
+      <h2 data-i18n="contact.title">문의하기</h2>
+      <form>
+        <label for="name" data-i18n="contact.name">이름:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email" data-i18n="contact.email">이메일:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message" data-i18n="contact.message">메시지:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit" data-i18n="contact.submit">보내기</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 국제결혼 매칭 서비스</p>
+    <p data-i18n="footer">© 2025 국제결혼 매칭 서비스</p>
   </footer>
 </body>
 </html>
